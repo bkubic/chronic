@@ -14,7 +14,7 @@ module Chronic
       direction = 0 if pointer == :today
  
       day_num = symbol_to_number(@type)
-      raise ArgumentError, "It's not #{day_num.to_s} today" if pointer == :today && @now.wday != day_num
+      
 
       unless @current_date
         @current_date = ::Date.new(@now.year, @now.month, @now.day)
