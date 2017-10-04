@@ -14,7 +14,8 @@ module Chronic
       :guess => true,
       :ambiguous_time_range => 6,
       :endian_precedence    => [:middle, :little],
-      :ambiguous_year_future_bias => 50
+      :ambiguous_year_future_bias => 50,
+      :today => false
     }
 
     attr_accessor :now
